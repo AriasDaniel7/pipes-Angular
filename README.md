@@ -1,6 +1,9 @@
 # Pipes App of Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+This project was generated with:
+- [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+- [PrimeNG](https://primeng.org/) version 16.0.2.
+- [PrimeFlex](https://primeflex.org/) version 3.3.1. 
 
 ## Development server
 

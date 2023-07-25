@@ -1,12 +1,11 @@
-<p-panel header="Pipes personalizados"
-class="p-1">
+<p-panel header="Pipes personalizados" class="p-1">
   <p>
     Pipes personalizados - Creados por
     {{ "nosotros." | toggleCase : isUppercase }}
   </p>
 </p-panel>
 
-<p-toolbar>
+<p-toolbar class="m-1">
   <div class="p-toolbar-group-end">
     <p-button
       (onClick)="toggleUpperCase()"
@@ -40,28 +39,24 @@ class="p-1">
   </div>
 </p-toolbar>
 
-<div class="grid">
-  <div class="col mt-2">
-    <p-panel header="Héroes">
-      <p-table
-        [value]="heroes | sortBy : orderBy"
-        [tableStyle]="{ 'min-width': '50rem' }"
-      >
-        <ng-template pTemplate="header">
-          <tr>
-            <th>Nombre</th>
-            <th>Vuela</th>
-            <th>Color</th>
-          </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-hero>
-          <tr>
-            <td>{{ hero.name }}</td>
-            <td>{{ hero.canFly | canFly }}</td>
-            <td>{{ hero.color }}</td>
-          </tr>
-        </ng-template>
-      </p-table>
-    </p-panel>
-  </div>
-</div>
+<p-panel header="Héroes">
+  <p-table
+    [value]="heroes | sortBy : orderBy"
+    [tableStyle]="{ 'min-width': '50rem' }"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Nombre</th>
+        <th>Vuela</th>
+        <th>Color</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-hero>
+      <tr>
+        <td>{{ hero.name }}</td>
+        <td>{{ hero.canFly | canFly }}</td>
+        <td>{{ hero.color }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</p-panel>

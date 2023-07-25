@@ -18,7 +18,7 @@ import { TableModule } from 'primeng/table';
     PanelModule,
     ToolbarModule,
     SplitButtonModule,
-    TableModule
+    TableModule,
   ]
 })
 export class PrimeNgModule { }
